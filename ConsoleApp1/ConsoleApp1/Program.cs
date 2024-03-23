@@ -18,7 +18,9 @@
 
             int[] numbers = { 1, 2, 3, 4, 5 };
             double average = CalculateAverage(numbers);
-            Console.WriteLine("Średnia wynosi: " + average);
+            Console.WriteLine("Average is: " + average);
+            int max = FindMax(numbers);
+            Console.WriteLine("Max value is: " + max);
 
             Console.Write($"{Environment.NewLine}Press any key to exit...");
             Console.ReadKey(true);
@@ -29,7 +31,7 @@
         {
             if (array == null || array.Length == 0)
             {
-                throw new ArgumentException("Tablica jest pusta lub niezainicjowana.");
+                throw new ArgumentException("Array is empty or uninitialized.");
             }
 
             int sum = 0;
@@ -45,7 +47,7 @@
         {
             if (array == null || array.Length == 0)
             {
-                throw new ArgumentException("Tablica jest pusta lub niezainicjowana.");
+                throw new ArgumentException("Array is empty or uninitialized.");
             }
 
             int max = array[0];
