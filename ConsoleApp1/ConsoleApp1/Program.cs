@@ -16,6 +16,10 @@
             var currentDate = DateTime.Now;
             Console.WriteLine($"{Environment.NewLine}Hello, {name}, on {currentDate:d} at {currentDate:t}!");
 
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            double average = CalculateAverage(numbers);
+            Console.WriteLine("Średnia wynosi: " + average);
+
             Console.Write($"{Environment.NewLine}Press any key to exit...");
             Console.ReadKey(true);
 
